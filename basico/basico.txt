@@ -1,0 +1,137 @@
+/*
+1 - Olá, Mundo!
+Crie um programa que imprima "Olá, Mundo!" na tela.
+
+fun main() {
+    println("Olá, Mundo!")
+}
+
+2 - Calculadora Simples
+Crie um programa que solicite dois números ao usuário e imprima a soma, 
+subtração, multiplicação e divisão desses números.
+
+fun main() {
+print("Digite o primeiro número: ")
+    val numero1 = readLine()!!.toDouble()
+
+    print("Digite o segundo número: ")
+    val numero2 = readLine()!!.toDouble()
+
+    val soma = numero1 + numero2
+    val subtracao = numero1 - numero2
+    val multiplicacao = numero1 * numero2
+    val divisao = numero1 / numero2
+
+    println("Soma: $soma")
+    println("Subtração: $subtracao")
+    println("Multiplicação: $multiplicacao")
+    if (numero2 == 0.0){
+        println ("não pode ser dividido por 0")
+    }else
+    println("Divisão: $divisao")
+}
+
+3 - Verificar Número Par ou Ímpar
+Crie um programa que solicite um número ao usuário e informe se é par ou ímpar.
+
+fun main() {
+    print("Digite um número: ")
+    val numero = readLine()!!.toInt()
+
+    if (numero % 2 == 0) {
+        println("O número é par.")
+    } else {
+        println("O número é ímpar.")
+    }
+}
+
+4 - Tabuada
+Crie um programa que solicite um número ao usuário e imprima a tabuada desse número de 1 a 10.
+
+fun main() {
+    print("Digite um número para a tabuada: ")
+    val numero = readLine()!!.toInt()
+
+    for (i in 1..10) {
+        val resultado = numero * i
+        println("$numero x $i = $resultado")
+    }
+}
+
+5 - Calculadora de Fatorial
+Crie um programa que calcule o fatorial de um número fornecido pelo usuário.
+
+fun main() {
+    print("Digite um número para calcular o fatorial: ")
+    val numero = readLine()!!.toInt()
+
+    var fatorial = 1
+
+    for (i in 1..numero) {
+        fatorial *= i
+    }
+
+    println("O fatorial de $numero é $fatorial")
+}
+
+6 - Verificar Palíndromo
+Crie um programa que verifique se uma palavra fornecida pelo usuário é um palíndromo.
+
+fun main() {
+    print("Digite uma palavra: ")
+    val palavra = readLine()!!.toLowerCase()
+
+    if (palavra == palavra.reversed()) {
+        println("A palavra é um palíndromo.")
+    } else {
+        println("A palavra não é um palíndromo.")
+    }
+}
+
+7 - Conversor de Temperatura
+Crie um programa que converta uma temperatura de Celsius para Fahrenheit. A fórmula é: 
+F = C x 9/5 + 32.
+?
+8 - Maior Número
+Crie um programa que solicite três números ao usuário e imprima o maior deles.
+fun main() {
+    print("Digite o primeiro número: ")
+    val numero1 = readLine()!!.toInt()
+
+    print("Digite o segundo número: ")
+    val numero2 = readLine()!!.toInt()
+
+    print("Digite o terceiro número: ")
+    val numero3 = readLine()!!.toInt()
+
+    val maior = maxOf(numero1, numero2, numero3)
+
+    println("O maior número é: $maior")
+}
+
+9 - Contagem Regressiva
+Crie um programa que faça uma contagem regressiva de 10 até 1, imprimindo cada número.
+fun main() {
+    for (i in 10 downTo 1) {
+        println(i)
+    }
+}
+
+10 - Soma dos Números Pares até N
+Crie um programa que solicite um número N
+ao usuário e imprima a soma de todos os números pares de 1 até N.
+
+fun main() {
+    print("Digite um número N: ")
+    val n = readLine()!!.toInt()
+
+    var soma = 0
+
+    for (i in 2..n step 2) {
+        soma += i
+    }
+
+    println("A soma dos números pares até $n é: $soma")
+}
+
+*/
